@@ -30,13 +30,14 @@
 <meta property="og:site_name" content="Burj Lizi X">
 <meta property="og:description" content="Paltform and Software Tools github, git, node.js, Hexo a domain to tie to github.io, a template for blog  Some Potential IssuesNameCreate a new repo, name it username.github.io, which means first part">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/images/D1_1.png">
-<meta property="og:image" content="http://example.com/images/D1_2.png">
+<meta property="og:image" content="https://live.staticflickr.com/65535/51819242095_eae1b02ad1_h.jpg">
+<meta property="og:image" content="https://live.staticflickr.com/65535/51817578422_7855d75e6f_b.jpg">
+<meta property="og:image" content="https://live.staticflickr.com/65535/51818868589_d1580fd62a_h.jpg">
 <meta property="article:published_time" content="2022-01-13T06:00:30.000Z">
-<meta property="article:modified_time" content="2022-01-13T18:05:00.756Z">
+<meta property="article:modified_time" content="2022-01-13T18:47:38.558Z">
 <meta property="article:author" content="Lizi X">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/D1_1.png">
+<meta name="twitter:image" content="https://live.staticflickr.com/65535/51819242095_eae1b02ad1_h.jpg">
 
 <link rel="canonical" href="http://example.com/2022/01/12/Issues-of-Setting-up-Blog/">
 
@@ -240,7 +241,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-13 11:05:00" itemprop="dateModified" datetime="2022-01-13T11:05:00-07:00">2022-01-13</time>
+                <time title="Modified: 2022-01-13 11:47:38" itemprop="dateModified" datetime="2022-01-13T11:47:38-07:00">2022-01-13</time>
               </span>
 
           
@@ -259,7 +260,7 @@
 <li>a domain to tie to <em>github.io</em>, a template for blog</li>
 </ul>
 <h2 id="Some-Potential-Issues"><a href="#Some-Potential-Issues" class="headerlink" title="Some Potential Issues"></a>Some Potential Issues</h2><h3 id="Name"><a href="#Name" class="headerlink" title="Name"></a>Name</h3><p>Create a new repo, name it <em><strong>username</strong>.github.io</em>, which means first part of the repo has to be the same as your github’s username. for example, burjlizix–burjlizix.github.io.</p>
-<h3 id="Edit-DNS-of-Domain"><a href="#Edit-DNS-of-Domain" class="headerlink" title="Edit DNS of Domain"></a>Edit DNS of Domain</h3><p><img src="/images/D1_1.png" alt="DNS"></p>
+<h3 id="Edit-DNS-of-Domain"><a href="#Edit-DNS-of-Domain" class="headerlink" title="Edit DNS of Domain"></a>Edit DNS of Domain</h3><p><img src="https://live.staticflickr.com/65535/51819242095_eae1b02ad1_h.jpg" alt="DNS"></p>
 <ul>
 <li>Add first row, <strong>host name</strong>: @ (or stay blank with google domain); <strong>type</strong>: A; <strong>data</strong>: IPv4.<ul>
 <li><code>ping -4 username.github.io</code> to get IPv4 address.</li>
@@ -294,11 +295,24 @@
 <ul>
 <li>edit <code>&quot;~/themes/next/_config.yml&quot;</code> file and change local search from false to true.</li>
 </ul>
-<p><img src="/images/D1_2.png" alt="LocalSearch"></p>
+<p><img src="https://live.staticflickr.com/65535/51817578422_7855d75e6f_b.jpg" alt="LocalSearch"></p>
 <ul>
 <li><code>hexo clean</code>+<code>hexo g</code>+<code>hexo d</code> or <code>hexo s</code> to check.</li>
 </ul>
-<h3 id="Post-images"><a href="#Post-images" class="headerlink" title="Post images"></a>Post images</h3><p>Put your images in <code>~/source/images/</code>, if no, create one. Then, <code>![image_name](/images/xx.png)</code></p>
+<h3 id="Post-images"><a href="#Post-images" class="headerlink" title="Post images"></a>Post images</h3><ul>
+<li><p>Approach 1 local : Put your images in <code>~/source/images/</code>, if no, create one. Then, <code>![image_name](/images/xx.png)</code></p>
+</li>
+<li><p>Approach 2 web: Get correct image link.<br>Take flicker as an example:</p>
+<ul>
+<li>Update your image to flicker</li>
+<li>Click and open image, view page source, search<code>class=&quot;main-photo</code> to find image LINK.</li>
+</ul>
+<p><img src="https://live.staticflickr.com/65535/51818868589_d1580fd62a_h.jpg" alt="ImageLink"></p>
+<ul>
+<li><code>https://LINK</code>.</li>
+</ul>
+</li>
+</ul>
 
     </div>
 
@@ -496,7 +510,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">All blogs count 448 words</span>
+  <span class="post-count">All blogs count 486 words</span>
 </div>
 
 
