@@ -3,11 +3,11 @@
   <title>Burj Lizi X</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://burjlizix.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://burjlizix.com/"/>
   <updated>2022-01-13T18:47:38.558Z</updated>
-  <id>http://example.com/</id>
+  <id>https://burjlizix.com/</id>
   
   <author>
     <name>Lizi X</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Issues of Setting up Blog</title>
-    <link href="http://example.com/2022/01/12/Issues-of-Setting-up-Blog/"/>
-    <id>http://example.com/2022/01/12/Issues-of-Setting-up-Blog/</id>
+    <link href="https://burjlizix.com/2022/01/12/Issues-of-Setting-up-Blog/"/>
+    <id>https://burjlizix.com/2022/01/12/Issues-of-Setting-up-Blog/</id>
     <published>2022-01-13T06:00:30.000Z</published>
     <updated>2022-01-13T18:47:38.558Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/01/09/hello-world/"/>
-    <id>http://example.com/2022/01/09/hello-world/</id>
+    <link href="https://burjlizix.com/2022/01/09/hello-world/"/>
+    <id>https://burjlizix.com/2022/01/09/hello-world/</id>
     <published>2022-01-09T08:43:05.664Z</published>
     <updated>2022-01-09T08:43:05.664Z</updated>
     
