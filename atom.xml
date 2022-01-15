@@ -6,7 +6,7 @@
   <link href="https://burjlizix.com/atom.xml" rel="self"/>
   
   <link href="https://burjlizix.com/"/>
-  <updated>2022-01-13T18:47:38.558Z</updated>
+  <updated>2022-01-15T20:09:23.460Z</updated>
   <id>https://burjlizix.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Begin with Markdown 1</title>
+    <link href="https://burjlizix.com/2022/01/15/Begin-with-Markdown-1/"/>
+    <id>https://burjlizix.com/2022/01/15/Begin-with-Markdown-1/</id>
+    <published>2022-01-15T20:01:25.000Z</published>
+    <updated>2022-01-15T20:09:23.460Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Editor"><a href="#Editor" class="headerlink" title="Editor"></a>Editor</h2><h3 id="Software"><a href="#Software" class="headerlink" title="Software"></a>Software</h3><p>VS Code</p><h3 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h3><ul><li><p>Markdown Preview Enhanced (MPE)<br>  Very powful markdown entension in VS Code<br>  <img src="https://live.staticflickr.com/65535/51821297494_9bd0e30783_h.jpg" alt=" "></p></li><li><p>Markdown PDF<br>Convert md file to pdf/html/png/jpeg</p></li><li><p>Markdownlint<br>check linting and style</p></li><li><p>Markdown Preview Github Styling</p></li></ul><h3 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h3><p><img src="https://live.staticflickr.com/65535/51821463373_19ff89bcd3_k.jpg" alt="Preparation &amp; Basic syntax 1"></p><ol><li>load your md folder.</li><li>open md file to edit.</li><li>click the botton to preview.</li><li>preview while writing md.</li></ol><h2 id="Basic-syntax"><a href="#Basic-syntax" class="headerlink" title="Basic syntax"></a>Basic syntax</h2><ul><li>heading</li><li>paragraph<ul><li>paragraph</li><li>line</li></ul></li><li>emphasis<ul><li>Bold</li><li>Italic</li><li>Strikethrough</li></ul></li><li>list<ul><li>ordered list</li><li>unordered list</li><li>task list</li></ul></li><li>comments</li><li>image<ul><li>local</li><li>online</li></ul></li></ul><p><img src="https://live.staticflickr.com/65535/51822474856_eb59102cc9_k.jpg" alt="Basic syntax 2"><br><img src="https://live.staticflickr.com/65535/51822474821_ef91aad1aa_k.jpg" alt="Basic syntax 3"></p><p>Thank <a href="https://www.markdownguide.org/basic-syntax/">Markdown Guide</a> and <a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/">MPE</a>.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Editor&quot;&gt;&lt;a href=&quot;#Editor&quot; class=&quot;headerlink&quot; title=&quot;Editor&quot;&gt;&lt;/a&gt;Editor&lt;/h2&gt;&lt;h3 id=&quot;Software&quot;&gt;&lt;a href=&quot;#Software&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Issues of Setting up Blog</title>
