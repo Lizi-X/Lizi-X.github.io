@@ -204,6 +204,156 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/17/Begin-with-Markdown-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Lizi X">
+      <meta itemprop="description" content="No pains, no gains">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Burj Lizi X">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/17/Begin-with-Markdown-2/" class="post-title-link" itemprop="url">Begin with Markdown 2</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-01-17 20:53:53 / Modified: 22:33:49" itemprop="dateCreated datePublished" datetime="2022-01-17T20:53:53-07:00">2022-01-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>[TOC]<br><img src="https://live.staticflickr.com/65535/51826686552_d2d0f2d60e_h.jpg"></p>
+<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><p>put <code>[TOC]</code> in the position where you want to generate content. This it can caputere headings(heading 1-6) automaticly.</p>
+<h2 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">|heading one|heading two| headng three|</span><br><span class="line">|:---|---:|:---:|</span><br><span class="line">|:- left|-: right|:-: center|</span><br><span class="line">|&gt;|a|b|</span><br><span class="line">|a|&gt;|b|</span><br><span class="line">|a|b|&gt;|</span><br><span class="line">|^|c|d|</span><br><span class="line">|c|^|d|</span><br><span class="line">|c|d|^|</span><br></pre></td></tr></table></figure>
+
+<div align="center">
+
+<img src=https://live.staticflickr.com/65535/51826686572_23b193284b_c.jpg width=300 align=center />
+
+</div>
+
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><h3 id="Inline-code"><a href="#Inline-code" class="headerlink" title="Inline code"></a>Inline code</h3><p>insert code into text and sentences with ‘``’. text <code>your code/command</code> text.</p>
+<h3 id="Code-block"><a href="#Code-block" class="headerlink" title="Code block"></a>Code block</h3><h4 id="Format"><a href="#Format" class="headerlink" title="Format"></a>Format</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```language &#123;cmd=yourcmd, option1=value1, op2=v2,...&#125;</span></span><br><span class="line"><span class="code">...code...</span></span><br><span class="line"><span class="code">code...</span></span><br><span class="line"><span class="code">...</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+
+<p>options:</p>
+<ul>
+<li>cmd: do you run the code? (if running, there will be results)</li>
+<li>hide: do you hide the code?</li>
+<li>output: html/text/markdown/png</li>
+<li>other options</li>
+</ul>
+<h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><ol>
+<li>default(no commands)</li>
+</ol>
+<p>source code:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```python</span></span><br><span class="line"><span class="code">print(&quot;hello world&quot;)</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+
+<p>display after markdown rendering:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>run code</li>
+</ol>
+<!--here is the image of setting run code-->
+<p><img src="https://live.staticflickr.com/65535/51827610506_edd815127d_h.jpg" alt="Enable Script Excution"><br>source code:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```python &#123;cmd=true&#125;</span></span><br><span class="line"><span class="code">print(&quot;hello world&quot;)</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+
+<p>display after markdown rendering:</p>
+<!--
+<figure class="highlight python"><figcaption><span>&#123;cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>–&gt;</p>
+<p><img src="https://live.staticflickr.com/65535/51827742038_a99bd51661_h.jpg" alt="Run code"></p>
+<ol start="3">
+<li>run and hide code (only display running results)</li>
+</ol>
+<p>source code:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```python &#123;cmd hide&#125;s</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">def bubble_sort_v3(array =[]):</span></span><br><span class="line"><span class="code">    last_exchange_index = len(array)-1</span></span><br><span class="line"><span class="code">    for i in range(len(array)-1):</span></span><br><span class="line"><span class="code">        for j in range(last_exchange_index):</span></span><br><span class="line"><span class="code">            if array[j] &gt; array[j+1]:</span></span><br><span class="line"><span class="code">                temp = array[j]</span></span><br><span class="line"><span class="code">                array[j] = array[j+1]</span></span><br><span class="line"><span class="code">                array[j+1] = temp</span></span><br><span class="line"><span class="code">                last_exchange_index = j # important </span></span><br><span class="line"><span class="code">     </span></span><br><span class="line"><span class="code">        if last_exchange_index == 0:</span></span><br><span class="line"><span class="code">            break</span></span><br><span class="line"><span class="code">    </span></span><br><span class="line"><span class="code">my_array = [-1, 5, 3, -1, 6, 7, 8, 2, 2, -14, 10, 12]</span></span><br><span class="line"><span class="code">bubble_sort_v3(my_array)</span></span><br><span class="line"><span class="code">print(my_array)</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+
+<!--
+<figure class="highlight python"><figcaption><span>&#123;cmd hide&#125;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubble_sort_v3</span>(<span class="params">array =[]</span>):</span></span><br><span class="line">    last_exchange_index = <span class="built_in">len</span>(array)-<span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(array)-<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(last_exchange_index):</span><br><span class="line">            <span class="keyword">if</span> array[j] &gt; array[j+<span class="number">1</span>]:</span><br><span class="line">                temp = array[j]</span><br><span class="line">                array[j] = array[j+<span class="number">1</span>]</span><br><span class="line">                array[j+<span class="number">1</span>] = temp</span><br><span class="line">                last_exchange_index = j <span class="comment"># important </span></span><br><span class="line">     </span><br><span class="line">        <span class="keyword">if</span> last_exchange_index == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    </span><br><span class="line">my_array = [-<span class="number">1</span>, <span class="number">5</span>, <span class="number">3</span>, -<span class="number">1</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">2</span>, <span class="number">2</span>, -<span class="number">14</span>, <span class="number">10</span>, <span class="number">12</span>]</span><br><span class="line">bubble_sort_v3(my_array)</span><br><span class="line"><span class="built_in">print</span>(my_array)</span><br></pre></td></tr></table></figure>
+<p>–&gt;</p>
+<p><img src="https://live.staticflickr.com/65535/51827632531_b68b38b1f0_h.jpg" alt="Run and hide"></p>
+<ol start="4">
+<li>matplotlib</li>
+</ol>
+<ul>
+<li>set <code>matplotlib=true</code></li>
+<li>cmd=true/your_interpreter_path<br>source code:</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">```python &#123;cmd=&quot;D:/software/anaconda/next/envs/LiziX/python.exe&quot; matplotlib=true&#125;</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">plt.plot([1,2,3,6, 10])</span><br><span class="line">plt.show()</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<!--
+<figure class="highlight python"><figcaption><span>&#123;cmd</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.plot([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">6</span>, <span class="number">10</span>])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p>–&gt;</p>
+<div align='center'>
+
+<img src=https://live.staticflickr.com/65535/51828358160_717b3228ca_b.jpg width=300 align=center />
+
+</div>
+
+<h4 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h4><p>source code:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">```bash</span><br><span class="line">hexo s</span><br><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+<p>display after markdown rendering:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
+<h4 id="mermaid"><a href="#mermaid" class="headerlink" title="mermaid"></a>mermaid</h4><p>Plase click <a href="https://burjlizix.com/2022/01/16/Begin-with-Markdown-3-Diagrams/">blog 3</a>.</p>
+<h4 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h4><ul>
+<li>support LaTex math syntax</li>
+<li>inline: <code>$math_formula$</code> or <code>\(math_formula\)</code></li>
+<li>block: <code>$$math_formula$$</code> or <code>\[math_formula\]</code></li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$r(\theta) = 1-sin(\theta)$</span><br><span class="line">\(r(\theta) = 1-sin(\theta)\)</span><br><span class="line">$$r(\theta) = 1-sin(\theta)$$</span><br><span class="line">\[r(\theta) = 1-sin(\theta)\]</span><br></pre></td></tr></table></figure>
+
+<!--
+$r(\theta) = 1-sin(\theta)$
+\(r(\theta) = 1-sin(\theta)\)
+$$r(\theta) = 1-sin(\theta)$$
+\[r(\theta) = 1-sin(\theta)\]
+-->
+<p><img src="https://live.staticflickr.com/65535/51826686522_145837bfd5_h.jpg"></p>
+
+      
+    </div>
+
+    
+    
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/16/Begin-with-Markdown-3-Diagrams/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -235,7 +385,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-17 00:52:10" itemprop="dateModified" datetime="2022-01-17T00:52:10-07:00">2022-01-17</time>
+                <time title="Modified: 2022-01-17 16:59:55" itemprop="dateModified" datetime="2022-01-17T16:59:55-07:00">2022-01-17</time>
               </span>
 
           
@@ -383,6 +533,8 @@
 <div  align="center">
 
  <img src=https://live.staticflickr.com/65535/51826014699_c5cce4a221_b.jpg width = "250"  alt="Example of Flow" align=center />
+
+</div>
 
       
     </div>
@@ -770,7 +922,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -823,7 +975,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">All blogs count 1.2k words</span>
+  <span class="post-count">All blogs count 1.3k words</span>
 </div>
 
 
