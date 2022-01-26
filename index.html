@@ -204,6 +204,70 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Lizi X">
+      <meta itemprop="description" content="No pains, no gains">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Burj Lizi X">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/22/The-Bias-Variance-Trade-Off/" class="post-title-link" itemprop="url">The Bias-Variance Trade-Off</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-01-22 08:26:43 / Modified: 10:21:19" itemprop="dateCreated datePublished" datetime="2022-01-22T08:26:43-07:00">2022-01-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Mean-Squared-Error-MSE"><a href="#Mean-Squared-Error-MSE" class="headerlink" title="Mean Squared Error (MSE)"></a>Mean Squared Error (MSE)</h3><p>In order to evaulate the performance of a statistical learning method on a given dataset, we need some way to measure how well its predictions actually mathch the observed data. In the regression setting, the most commonly-used measure is MSE.<br>$$MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i-\widehat{f}(x_i))^2\space\space\space\space\space\space\space\space(1)$$<br>Where$\widehat{f}(x_i)$ is the prediction that $\widehat{f}%$ gives for the <em>i</em>th obversation. The closer the predicted responses are to the true responses, the smaller the MSE will be. The MSE in (1) is computed using the training data to fit the model. However, what we are interested is test data and we want to choose the lowest <strong>test MSE</strong>. That means, whether $\widehat{f}(x_0)$ is approximately equal to y<del>0</del>, where $(x_0,y_0)$ is a previously unseen test observation not used to train the statistical learning model. If we had a large number of test observations, we could computer test MSE:<br>$$Ave(y_0-\widehat{f}(x_0))\space\space\space\space\space\space\space\space(2)$$</p>
+<p>If we have available test data set, just go ahead, evaluate (2) on the test observatons and select the learning method with smallest test MSE.<br>If there’s no avaliabe, can we minimizes training MSE(1) directly?</p>
+<h2 id="What-is-Bias-Variance-Trade-Off"><a href="#What-is-Bias-Variance-Trade-Off" class="headerlink" title="What is Bias-Variance Trade-Off?"></a>What is Bias-Variance Trade-Off?</h2><h2 id="Why-is-Bias-Variance-Trade-Off"><a href="#Why-is-Bias-Variance-Trade-Off" class="headerlink" title="Why is Bias-Variance Trade-Off?"></a>Why is Bias-Variance Trade-Off?</h2><p>?</p>
+<h2 id="prove"><a href="#prove" class="headerlink" title="prove"></a>prove</h2><h2 id="Relative-Math-basics"><a href="#Relative-Math-basics" class="headerlink" title="Relative Math basics"></a>Relative Math basics</h2><h2 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h2><p>MSE–&gt;discussion of training and test MSE –&gt; underfit and overfit –&gt; bias-variance trade-off –&gt; why bias-variance trade-off? –&gt; prove BVTO –&gt; mathmatical foundation.</p>
+
+      
+    </div>
+
+    
+    
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/17/Begin-with-Markdown-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -235,7 +299,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-18 09:41:43" itemprop="dateModified" datetime="2022-01-18T09:41:43-07:00">2022-01-18</time>
+                <time title="Modified: 2022-01-18 09:42:18" itemprop="dateModified" datetime="2022-01-18T09:42:18-07:00">2022-01-18</time>
               </span>
 
           
@@ -919,7 +983,7 @@ $$r(\theta) = 1-sin(\theta)$$
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -972,7 +1036,7 @@ $$r(\theta) = 1-sin(\theta)$$
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">All blogs count 1.5k words</span>
+  <span class="post-count">All blogs count 1.8k words</span>
 </div>
 
 

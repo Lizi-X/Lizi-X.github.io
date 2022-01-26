@@ -23,25 +23,19 @@
     var CONFIG = {"hostname":"burjlizix.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false,"sidebar_rss":{"text":"RSS","icon":"fa fa-rss","color":"burywood","link":"atom.xml"}},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.jason"};
   </script>
 
-  <meta name="description" content="[TOC]  ContentPut [TOC] in the position where you want to generate content. This it can caputere headings(heading 1-6) automaticly. Table123456789|heading one|heading two| headng three||:---|---:|:---">
+  <meta name="description" content="Mean Squared Error (MSE)In order to evaulate the performance of a statistical learning method on a given dataset, we need some way to measure how well its predictions actually mathch the observed data">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Begin with Markdown 2">
-<meta property="og:url" content="https://burjlizix.com/2022/01/17/Begin-with-Markdown-2/index.html">
+<meta property="og:title" content="The Bias-Variance Trade-Off">
+<meta property="og:url" content="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/index.html">
 <meta property="og:site_name" content="Burj Lizi X">
-<meta property="og:description" content="[TOC]  ContentPut [TOC] in the position where you want to generate content. This it can caputere headings(heading 1-6) automaticly. Table123456789|heading one|heading two| headng three||:---|---:|:---">
+<meta property="og:description" content="Mean Squared Error (MSE)In order to evaulate the performance of a statistical learning method on a given dataset, we need some way to measure how well its predictions actually mathch the observed data">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://live.staticflickr.com/65535/51826686552_d2d0f2d60e_h.jpg">
-<meta property="og:image" content="https://live.staticflickr.com/65535/51827610506_edd815127d_h.jpg">
-<meta property="og:image" content="https://live.staticflickr.com/65535/51827742038_a99bd51661_h.jpg">
-<meta property="og:image" content="https://live.staticflickr.com/65535/51827632531_b68b38b1f0_h.jpg">
-<meta property="og:image" content="https://live.staticflickr.com/65535/51826686522_145837bfd5_h.jpg">
-<meta property="article:published_time" content="2022-01-18T03:53:53.000Z">
-<meta property="article:modified_time" content="2022-01-18T16:42:18.060Z">
+<meta property="article:published_time" content="2022-01-22T15:26:43.000Z">
+<meta property="article:modified_time" content="2022-01-22T17:21:19.176Z">
 <meta property="article:author" content="Lizi X">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://live.staticflickr.com/65535/51826686552_d2d0f2d60e_h.jpg">
 
-<link rel="canonical" href="https://burjlizix.com/2022/01/17/Begin-with-Markdown-2/">
+<link rel="canonical" href="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/">
 
 
 <script id="page-configurations">
@@ -54,7 +48,7 @@
   };
 </script>
 
-  <title>Begin with Markdown 2 | Burj Lizi X</title>
+  <title>The Bias-Variance Trade-Off | Burj Lizi X</title>
   
 
 
@@ -213,7 +207,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/17/Begin-with-Markdown-2/">
+    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -226,7 +220,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Begin with Markdown 2
+          The Bias-Variance Trade-Off
         </h1>
 
         <div class="post-meta">
@@ -235,16 +229,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2022-01-17 20:53:53" itemprop="dateCreated datePublished" datetime="2022-01-17T20:53:53-07:00">2022-01-17</time>
+              <time title="Created: 2022-01-22 08:26:43 / Modified: 10:21:19" itemprop="dateCreated datePublished" datetime="2022-01-22T08:26:43-07:00">2022-01-22</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-18 09:42:18" itemprop="dateModified" datetime="2022-01-18T09:42:18-07:00">2022-01-18</time>
-              </span>
 
           
 
@@ -257,87 +245,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>[TOC]</p>
-<p><img src="https://live.staticflickr.com/65535/51826686552_d2d0f2d60e_h.jpg"></p>
-<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><p>Put <code>[TOC]</code> in the position where you want to generate content. This it can caputere headings(heading 1-6) automaticly.</p>
-<h2 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">|heading one|heading two| headng three|</span><br><span class="line">|:---|---:|:---:|</span><br><span class="line">|:- left|-: right|:-: center|</span><br><span class="line">|&gt;|a|b|</span><br><span class="line">|a|&gt;|b|</span><br><span class="line">|a|b|&gt;|</span><br><span class="line">|^|c|d|</span><br><span class="line">|c|^|d|</span><br><span class="line">|c|d|^|</span><br></pre></td></tr></table></figure>
-
-<div align="center">
-
-<img src=https://live.staticflickr.com/65535/51826686572_23b193284b_c.jpg width=300 align=center />
-
-</div>
-
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><h3 id="Inline"><a href="#Inline" class="headerlink" title="Inline"></a>Inline</h3><p>Embed code into text and sentences with ‘``’. text <code>your code/command</code> text.</p>
-<h3 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h3><h4 id="Format"><a href="#Format" class="headerlink" title="Format"></a>Format</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```language &#123;cmd=yourcmd, option1=value1, op2=v2,...&#125;</span></span><br><span class="line"><span class="code">...code...</span></span><br><span class="line"><span class="code">code...</span></span><br><span class="line"><span class="code">...</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
-<p>options:</p>
-<ul>
-<li>cmd: do you run the code? (if running, there will be results)</li>
-<li>hide: do you hide the code?</li>
-<li>output: html/text/markdown/png</li>
-<li>other options</li>
-</ul>
-<h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><ol>
-<li>default(no commands)</li>
-</ol>
-<p>source code:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```python</span></span><br><span class="line"><span class="code">print(&quot;hello world&quot;)</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
-<p>display after markdown rendering:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>run code</li>
-</ol>
-<!--here is the image of setting run code-->
-<p><img src="https://live.staticflickr.com/65535/51827610506_edd815127d_h.jpg" alt="Enable Script Excution"><br>source code:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```python &#123;cmd=true&#125;</span></span><br><span class="line"><span class="code">print(&quot;hello world&quot;)</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
-<p>display after markdown rendering:</p>
-<p><img src="https://live.staticflickr.com/65535/51827742038_a99bd51661_h.jpg" alt=" "></p>
-<ol start="3">
-<li>run and hide code (only display running results)</li>
-</ol>
-<p>source code:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```python &#123;cmd hide&#125;s</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"><span class="code">def bubble_sort_v3(array =[]):</span></span><br><span class="line"><span class="code">    last_exchange_index = len(array)-1</span></span><br><span class="line"><span class="code">    for i in range(len(array)-1):</span></span><br><span class="line"><span class="code">        for j in range(last_exchange_index):</span></span><br><span class="line"><span class="code">            if array[j] &gt; array[j+1]:</span></span><br><span class="line"><span class="code">                temp = array[j]</span></span><br><span class="line"><span class="code">                array[j] = array[j+1]</span></span><br><span class="line"><span class="code">                array[j+1] = temp</span></span><br><span class="line"><span class="code">                last_exchange_index = j # important </span></span><br><span class="line"><span class="code">     </span></span><br><span class="line"><span class="code">        if last_exchange_index == 0:</span></span><br><span class="line"><span class="code">            break</span></span><br><span class="line"><span class="code">    </span></span><br><span class="line"><span class="code">my_array = [-1, 5, 3, -1, 6, 7, 8, 2, 2, -14, 10, 12]</span></span><br><span class="line"><span class="code">bubble_sort_v3(my_array)</span></span><br><span class="line"><span class="code">print(my_array)</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://live.staticflickr.com/65535/51827632531_b68b38b1f0_h.jpg" alt=" "></p>
-<ol start="4">
-<li>matplotlib</li>
-</ol>
-<ul>
-<li>set <code>matplotlib=true</code></li>
-<li>cmd=true/your_interpreter_path<br>source code:</li>
-</ul>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```python &#123;cmd=&quot;D:/software/anaconda/next/envs/LiziX/python.exe&quot; matplotlib=true&#125;</span></span><br><span class="line"><span class="code">import matplotlib.pyplot as plt</span></span><br><span class="line"><span class="code">plt.plot([1,2,3,6, 10])</span></span><br><span class="line"><span class="code">plt.show()</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
-<div align='center'>
-
-<img src=https://live.staticflickr.com/65535/51828358160_717b3228ca_b.jpg width=300 align=center />
-
-</div>
-
-<h4 id="Bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h4><p>source code:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```bash</span></span><br><span class="line"><span class="code">hexo s</span></span><br><span class="line"><span class="code">hexo clean</span></span><br><span class="line"><span class="code">hexo d -g</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-
-<p>display after markdown rendering:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line">hexo clean</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
-
-<h4 id="Mermaid"><a href="#Mermaid" class="headerlink" title="Mermaid"></a>Mermaid</h4><p>Plase click <a href="https://burjlizix.com/2022/01/16/Begin-with-Markdown-3-Diagrams/">blog 3</a>.</p>
-<h4 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h4><ul>
-<li>support LaTex math syntax</li>
-<li>inline: <code>$math_formula$</code> or <code>\(math_formula\)</code></li>
-<li>block: <code>$$math_formula$$</code> or <code>\[math_formula\]</code></li>
-</ul>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```markdown</span></span><br><span class="line"><span class="code">$r(\theta) = 1-sin(\theta)$</span></span><br><span class="line"><span class="code">\(r(\theta) = 1-sin(\theta)\)</span></span><br><span class="line"><span class="code">$$r(\theta) = 1-sin(\theta)$$</span></span><br><span class="line"><span class="code">\[r(\theta) = 1-sin(\theta)\]</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-<!--
-$r(\theta) = 1-sin(\theta)$
-\(r(\theta) = 1-sin(\theta)\)
-$$r(\theta) = 1-sin(\theta)$$
-\[r(\theta) = 1-sin(\theta)\]
--->
-<p><img src="https://live.staticflickr.com/65535/51826686522_145837bfd5_h.jpg" alt=" "></p>
+        <h3 id="Mean-Squared-Error-MSE"><a href="#Mean-Squared-Error-MSE" class="headerlink" title="Mean Squared Error (MSE)"></a>Mean Squared Error (MSE)</h3><p>In order to evaulate the performance of a statistical learning method on a given dataset, we need some way to measure how well its predictions actually mathch the observed data. In the regression setting, the most commonly-used measure is MSE.<br>$$MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i-\widehat{f}(x_i))^2\space\space\space\space\space\space\space\space(1)$$<br>Where$\widehat{f}(x_i)$ is the prediction that $\widehat{f}%$ gives for the <em>i</em>th obversation. The closer the predicted responses are to the true responses, the smaller the MSE will be. The MSE in (1) is computed using the training data to fit the model. However, what we are interested is test data and we want to choose the lowest <strong>test MSE</strong>. That means, whether $\widehat{f}(x_0)$ is approximately equal to y<del>0</del>, where $(x_0,y_0)$ is a previously unseen test observation not used to train the statistical learning model. If we had a large number of test observations, we could computer test MSE:<br>$$Ave(y_0-\widehat{f}(x_0))\space\space\space\space\space\space\space\space(2)$$</p>
+<p>If we have available test data set, just go ahead, evaluate (2) on the test observatons and select the learning method with smallest test MSE.<br>If there’s no avaliabe, can we minimizes training MSE(1) directly?</p>
+<h2 id="What-is-Bias-Variance-Trade-Off"><a href="#What-is-Bias-Variance-Trade-Off" class="headerlink" title="What is Bias-Variance Trade-Off?"></a>What is Bias-Variance Trade-Off?</h2><h2 id="Why-is-Bias-Variance-Trade-Off"><a href="#Why-is-Bias-Variance-Trade-Off" class="headerlink" title="Why is Bias-Variance Trade-Off?"></a>Why is Bias-Variance Trade-Off?</h2><p>?</p>
+<h2 id="prove"><a href="#prove" class="headerlink" title="prove"></a>prove</h2><h2 id="Relative-Math-basics"><a href="#Relative-Math-basics" class="headerlink" title="Relative Math basics"></a>Relative Math basics</h2><h2 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h2><p>MSE–&gt;discussion of training and test MSE –&gt; underfit and overfit –&gt; bias-variance trade-off –&gt; why bias-variance trade-off? –&gt; prove BVTO –&gt; mathmatical foundation.</p>
 
     </div>
 
@@ -363,7 +274,7 @@ $$r(\theta) = 1-sin(\theta)$$
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://burjlizix.com/2022/01/17/Begin-with-Markdown-2/" title="Begin with Markdown 2">https://burjlizix.com/2022/01/17/Begin-with-Markdown-2/</a>
+    <a href="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/" title="The Bias-Variance Trade-Off">https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -380,13 +291,10 @@ $$r(\theta) = 1-sin(\theta)$$
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/01/16/Begin-with-Markdown-3-Diagrams/" rel="prev" title="Begin with Markdown 3 Diagrams">
-      <i class="fa fa-chevron-left"></i> Begin with Markdown 3 Diagrams
+    <a href="/2022/01/17/Begin-with-Markdown-2/" rel="prev" title="Begin with Markdown 2">
+      <i class="fa fa-chevron-left"></i> Begin with Markdown 2
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/01/22/The-Bias-Variance-Trade-Off/" rel="next" title="The Bias-Variance Trade-Off">
-      The Bias-Variance Trade-Off <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -450,7 +358,7 @@ $$r(\theta) = 1-sin(\theta)$$
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Content"><span class="nav-number">1.</span> <span class="nav-text">Content</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Table"><span class="nav-number">2.</span> <span class="nav-text">Table</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">3.</span> <span class="nav-text">Code</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Inline"><span class="nav-number">3.1.</span> <span class="nav-text">Inline</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Block"><span class="nav-number">3.2.</span> <span class="nav-text">Block</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Format"><span class="nav-number">3.2.1.</span> <span class="nav-text">Format</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python"><span class="nav-number">3.2.2.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Bash"><span class="nav-number">3.2.3.</span> <span class="nav-text">Bash</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mermaid"><span class="nav-number">3.2.4.</span> <span class="nav-text">Mermaid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Math"><span class="nav-number">3.2.5.</span> <span class="nav-text">Math</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mean-Squared-Error-MSE"><span class="nav-number">1.</span> <span class="nav-text">Mean Squared Error (MSE)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-Bias-Variance-Trade-Off"><span class="nav-number"></span> <span class="nav-text">What is Bias-Variance Trade-Off?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-is-Bias-Variance-Trade-Off"><span class="nav-number"></span> <span class="nav-text">Why is Bias-Variance Trade-Off?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#prove"><span class="nav-number"></span> <span class="nav-text">prove</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Relative-Math-basics"><span class="nav-number"></span> <span class="nav-text">Relative Math basics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#draft"><span class="nav-number"></span> <span class="nav-text">draft</span></a></div>
       </div>
       <!--/noindex-->
 
