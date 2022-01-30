@@ -23,19 +23,17 @@
     var CONFIG = {"hostname":"burjlizix.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false,"sidebar_rss":{"text":"RSS","icon":"fa fa-rss","color":"burywood","link":"atom.xml"}},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.jason"};
   </script>
 
-  <meta name="description" content="Mean Squared Error (MSE)In order to evaulate the performance of a statistical learning method on a given dataset, we need some way to measure how well its predictions actually mathch the observed data">
-<meta property="og:type" content="article">
-<meta property="og:title" content="The Bias-Variance Trade-Off">
-<meta property="og:url" content="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/index.html">
+  <meta name="description" content="No pains, no gains">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Burj Lizi X">
+<meta property="og:url" content="https://burjlizix.com/tags/semantic-web/index.html">
 <meta property="og:site_name" content="Burj Lizi X">
-<meta property="og:description" content="Mean Squared Error (MSE)In order to evaulate the performance of a statistical learning method on a given dataset, we need some way to measure how well its predictions actually mathch the observed data">
+<meta property="og:description" content="No pains, no gains">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-01-22T15:26:43.000Z">
-<meta property="article:modified_time" content="2022-01-22T17:21:19.176Z">
 <meta property="article:author" content="Lizi X">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/">
+<link rel="canonical" href="https://burjlizix.com/tags/semantic-web/">
 
 
 <script id="page-configurations">
@@ -43,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'en'
   };
 </script>
 
-  <title>The Bias-Variance Trade-Off | Burj Lizi X</title>
+  <title>Tag: semantic web | Burj Lizi X</title>
   
 
 
@@ -200,110 +198,51 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content tag">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Lizi X">
-      <meta itemprop="description" content="No pains, no gains">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Burj Lizi X">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          The Bias-Variance Trade-Off
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-01-22 08:26:43 / Modified: 10:21:19" itemprop="dateCreated datePublished" datetime="2022-01-22T08:26:43-07:00">2022-01-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">semantic web
+          <small>Tag</small>
+        </h2>
+      </div>
 
       
-        <h3 id="Mean-Squared-Error-MSE"><a href="#Mean-Squared-Error-MSE" class="headerlink" title="Mean Squared Error (MSE)"></a>Mean Squared Error (MSE)</h3><p>In order to evaulate the performance of a statistical learning method on a given dataset, we need some way to measure how well its predictions actually mathch the observed data. In the regression setting, the most commonly-used measure is MSE.<br>$$MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i-\widehat{f}(x_i))^2\space\space\space\space\space\space\space\space(1)$$<br>Where$\widehat{f}(x_i)$ is the prediction that $\widehat{f}%$ gives for the <em>i</em>th obversation. The closer the predicted responses are to the true responses, the smaller the MSE will be. The MSE in (1) is computed using the training data to fit the model. However, what we are interested is test data and we want to choose the lowest <strong>test MSE</strong>. That means, whether $\widehat{f}(x_0)$ is approximately equal to y<del>0</del>, where $(x_0,y_0)$ is a previously unseen test observation not used to train the statistical learning model. If we had a large number of test observations, we could computer test MSE:<br>$$Ave(y_0-\widehat{f}(x_0))\space\space\space\space\space\space\space\space(2)$$</p>
-<p>If we have available test data set, just go ahead, evaluate (2) on the test observatons and select the learning method with smallest test MSE.<br>If there’s no avaliabe, can we minimizes training MSE(1) directly?</p>
-<h2 id="What-is-Bias-Variance-Trade-Off"><a href="#What-is-Bias-Variance-Trade-Off" class="headerlink" title="What is Bias-Variance Trade-Off?"></a>What is Bias-Variance Trade-Off?</h2><h2 id="Why-is-Bias-Variance-Trade-Off"><a href="#Why-is-Bias-Variance-Trade-Off" class="headerlink" title="Why is Bias-Variance Trade-Off?"></a>Why is Bias-Variance Trade-Off?</h2><p>?</p>
-<h2 id="prove"><a href="#prove" class="headerlink" title="prove"></a>prove</h2><h2 id="Relative-Math-basics"><a href="#Relative-Math-basics" class="headerlink" title="Relative Math basics"></a>Relative Math basics</h2><h2 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h2><p>MSE–&gt;discussion of training and test MSE –&gt; underfit and overfit –&gt; bias-variance trade-off –&gt; why bias-variance trade-off? –&gt; prove BVTO –&gt; mathmatical foundation.</p>
-
+    <div class="collection-year">
+      <span class="collection-header">2022</span>
     </div>
 
-    
-    
-    
-    
-    
-      <div>
-        <div>
-    
-        <div style="text-align:center;color: #ccc;font-size:24px;">-------------End of blog<i class="fa fa-paw"></i>Thanks for your reading-------------</div>
-    
-</div>
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2022-01-25T12:52:51-07:00"
+              content="2022-01-25">
+          01-25
+        </time>
       </div>
-    
-        
 
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>Lizi X
-  </li>
-  <li class="post-copyright-link">
-    <strong>Post link: </strong>
-    <a href="https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/" title="The Bias-Variance Trade-Off">https://burjlizix.com/2022/01/22/The-Bias-Variance-Trade-Off/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
-  </li>
-</ul>
-</div>
+      <div class="post-title">
+          <a class="post-title-link" href="/2022/01/25/Intelligent-Web-Introduction/" itemprop="url">
+            <span itemprop="name">Intelligent Web - Introduction</span>
+          </a>
+      </div>
 
-
-      <footer class="post-footer">
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2022/01/17/Begin-with-Markdown-3-Diagrams/" rel="prev" title="Begin with Markdown 3 Diagrams">
-      <i class="fa fa-chevron-left"></i> Begin with Markdown 3 Diagrams
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/01/25/Intelligent-Web-Introduction/" rel="next" title="Intelligent Web - Introduction">
-      Intelligent Web - Introduction <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+    </div>
+  </div>
   
   
+  
+
   
 
 
@@ -356,7 +295,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mean-Squared-Error-MSE"><span class="nav-number">1.</span> <span class="nav-text">Mean Squared Error (MSE)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-is-Bias-Variance-Trade-Off"><span class="nav-number"></span> <span class="nav-text">What is Bias-Variance Trade-Off?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-is-Bias-Variance-Trade-Off"><span class="nav-number"></span> <span class="nav-text">Why is Bias-Variance Trade-Off?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#prove"><span class="nav-number"></span> <span class="nav-text">prove</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Relative-Math-basics"><span class="nav-number"></span> <span class="nav-text">Relative Math basics</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#draft"><span class="nav-number"></span> <span class="nav-text">draft</span></a></div>
       </div>
       <!--/noindex-->
 
@@ -372,7 +310,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -385,7 +323,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -437,7 +375,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">All blogs count 1.8k words</span>
+  <span class="post-count">All blogs count 1.5k words</span>
 </div>
 
 
