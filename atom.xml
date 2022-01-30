@@ -6,7 +6,7 @@
   <link href="https://burjlizix.com/atom.xml" rel="self"/>
   
   <link href="https://burjlizix.com/"/>
-  <updated>2022-01-30T01:55:33.904Z</updated>
+  <updated>2022-01-30T03:14:00.871Z</updated>
   <id>https://burjlizix.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Optimization Settings for Hexo</title>
+    <link href="https://burjlizix.com/2022/01/29/Optimization-Settings-for-Hexo/"/>
+    <id>https://burjlizix.com/2022/01/29/Optimization-Settings-for-Hexo/</id>
+    <published>2022-01-30T02:00:31.000Z</published>
+    <updated>2022-01-30T03:14:00.871Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Tags"><a href="#Tags" class="headerlink" title="Tags"></a>Tags</h2><h3 id="Add-Tags"><a href="#Add-Tags" class="headerlink" title="Add Tags"></a>Add Tags</h3><ul><li><p>Git Bash in <code>./blog/</code> and run command</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new pages tags</span><br></pre></td></tr></table></figure></li><li><p>If successful</p><blockquote><p>INFO  Validating config<br>INFO  Created: D:\Blog\source\tags\index.md</p></blockquote></li><li><p>Open index.md. It looks like<br><img src="https://live.staticflickr.com/65535/51851625210_39a0a163a1_c.jpg"></p></li><li><p>Add <code>tpye: tags</code> in the last line, store and close index.md.<br><img src="https://live.staticflickr.com/65535/51851038853_e1c8e01220_z.jpg"></p></li><li><p>When writing a post, add tags in the front-matter,e.g.,<code>tags: hexo</code>.<br><img src="https://live.staticflickr.com/65535/51851075168_cbc2cb849a_b.jpg"></p></li><li><p>Display<br><img src="https://live.staticflickr.com/65535/51851060708_249c43b3b5_k.jpg"></p></li></ul><h3 id="Multi-tags"><a href="#Multi-tags" class="headerlink" title="Multi-tags"></a>Multi-tags</h3><p>use <code>tags: [tag1, tag2, tag3,...]</code> to add multi-tags.</p><h2 id="Categories"><a href="#Categories" class="headerlink" title="Categories"></a>Categories</h2><p>Similar to tags setting.</p><ul><li><p>Git Bash in <code>./blog/</code> and run command</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new pages categories</span><br></pre></td></tr></table></figure></li><li><p>If successful:</p><blockquote><p>INFO  Validating config<br>INFO  Created: D:\Blog\source\categories\index-1.md</p></blockquote></li><li><p>Open index.md. It looks like<br><img src="https://live.staticflickr.com/65535/51851038878_55cf2b73b7_z.jpg"></p></li><li><p>Add <code>tpye: categories</code> in the last line, store and close index.md.<br><img src="https://live.staticflickr.com/65535/51850005852_f02463243f.jpg"></p></li><li><p>When writing a post, add categories in the front-matter,e.g.,<code>categories: Hexo</code>.<br><img src="https://live.staticflickr.com/65535/51851075203_2733256bef_b.jpg"></p></li><li><p>Display. It also presents the number of posts after category name.<br><img src="https://live.staticflickr.com/65535/51850991891_be84aec20a_k.jpg"></p></li></ul><h2 id="Read-More"><a href="#Read-More" class="headerlink" title="Read More"></a>Read More</h2><p>In the default setting, Every post presents the full text in a list in the home page. We can set only abstract visible in the home page and click <strong>Read more</strong> to read the full post.</p><ul><li>Add <code>description: XXX</code> in the front-matter.<br><img src="https://live.staticflickr.com/65535/51851075198_c6eef22184_b.jpg"></li><li>Display. Only abstract in a list.<br><img src="https://live.staticflickr.com/65535/51850074792_0b5f9416ad_k.jpg"></li></ul>]]></content>
+    
+    
+    <summary type="html">Opimization Settings for Hexo - tags, categories, read more.</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://burjlizix.com/categories/Hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://burjlizix.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Intelligent Web - Introduction</title>
