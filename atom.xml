@@ -6,7 +6,7 @@
   <link href="https://burjlizix.com/atom.xml" rel="self"/>
   
   <link href="https://burjlizix.com/"/>
-  <updated>2022-02-09T02:48:09.442Z</updated>
+  <updated>2022-02-09T09:17:33.303Z</updated>
   <id>https://burjlizix.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RDF Basics</title>
+    <link href="https://burjlizix.com/2022/02/09/RDF-Basics/"/>
+    <id>https://burjlizix.com/2022/02/09/RDF-Basics/</id>
+    <published>2022-02-09T09:13:17.000Z</published>
+    <updated>2022-02-09T09:17:33.303Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://live.staticflickr.com/65535/51870294447_3579f94a67_k.jpg" alt="RDF Basics"></p>]]></content>
+    
+    
+    <summary type="html">RDF basic ideas, RDF XML-based syntax</summary>
+    
+    
+    
+    <category term="Intelligent Web-ECE 627" scheme="https://burjlizix.com/categories/Intelligent-Web-ECE-627/"/>
+    
+    
+    <category term="xml" scheme="https://burjlizix.com/tags/xml/"/>
+    
+    <category term="rdf" scheme="https://burjlizix.com/tags/rdf/"/>
+    
+  </entry>
   
   <entry>
     <title>XML</title>
