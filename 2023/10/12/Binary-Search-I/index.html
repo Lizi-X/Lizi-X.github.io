@@ -23,17 +23,20 @@
     var CONFIG = {"hostname":"burjlizix.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false,"sidebar_rss":{"text":"RSS","icon":"fa fa-rss","color":"burywood","link":"atom.xml"}},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.jason"};
   </script>
 
-  <meta name="description" content="No pains, no gains">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Burj Lizi X">
-<meta property="og:url" content="https://burjlizix.com/tags/intelligent-web/index.html">
+  <meta name="description" content="Basic understanding of binary search. lc 704, lc 35.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Binary Search I">
+<meta property="og:url" content="https://burjlizix.com/2023/10/12/Binary-Search-I/index.html">
 <meta property="og:site_name" content="Burj Lizi X">
-<meta property="og:description" content="No pains, no gains">
+<meta property="og:description" content="Basic understanding of binary search. lc 704, lc 35.">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-10-12T00:01:42.000Z">
+<meta property="article:modified_time" content="2023-10-11T10:52:37.048Z">
 <meta property="article:author" content="LIZI FU">
+<meta property="article:tag" content="algorithm">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://burjlizix.com/tags/intelligent-web/">
+<link rel="canonical" href="https://burjlizix.com/2023/10/12/Binary-Search-I/">
 
 
 <script id="page-configurations">
@@ -41,12 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Tag: intelligent web | Burj Lizi X</title>
+  <title>Binary Search I | Burj Lizi X</title>
   
 
 
@@ -198,51 +201,134 @@
         <div class="content-wrap">
           
 
-          <div class="content tag">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">intelligent web
-          <small>Tag</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2023/10/12/Binary-Search-I/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="LIZI FU">
+      <meta itemprop="description" content="No pains, no gains">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Burj Lizi X">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Binary Search I
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-10-11 18:01:42 / Modified: 04:52:37" itemprop="dateCreated datePublished" datetime="2023-10-11T18:01:42-06:00">2023-10-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index"><span itemprop="name">algorithm</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">Basic understanding of binary search. lc 704, lc 35.</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <h2 id="Basic-Scenario"><a href="#Basic-Scenario" class="headerlink" title="Basic Scenario"></a>Basic Scenario</h2><p>Find the index of a <strong>target matching</strong> element in a <strong>sorted</strong> (either ascending or non-increasing) array.</p>
+<h2 id="Classic-examples"><a href="#Classic-examples" class="headerlink" title="Classic examples"></a>Classic examples</h2><p> <strong><a target="_blank" rel="noopener" href="https://leetcode.com/problems/binary-search/description/">lc 704 Search target</a></strong> </p>
+<p>Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.</p>
+<p>You must write an algorithm with O(log n) runtime complexity.</p>
+<p>Example 1:<br>Input: nums = [-1,0,3,5,9,12], target = 9<br>Output: 4<br>Explanation: 9 exists in nums and its index is 4</p>
+<p>Example 2:<br>Input: nums = [-1,0,3,5,9,12], target = 2<br>Output: -1<br>Explanation: 2 does not exist in nums so return -1</p>
+<p>Constraints:<br>1 &lt;= nums.length &lt;= 104<br>-104 &lt; nums[i], target &lt; 104<br>All the integers in nums are unique.<br>nums is sorted in ascending order.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">binarySearch</span>(<span class="params">nums,target</span>):</span></span><br><span class="line">    l,r = <span class="number">0</span>, <span class="built_in">len</span>(nums)-<span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> l &lt;= r: <span class="comment">#*</span></span><br><span class="line">        mid = (l+r)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> target &lt; nums[mid]:</span><br><span class="line">            r = mid - <span class="number">1</span> <span class="comment">#*</span></span><br><span class="line">        <span class="keyword">elif</span> target &gt; nums[mid]:</span><br><span class="line">            l = mid + <span class="number">1</span> <span class="comment">#*</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<br>
+
+<p> <strong><a target="_blank" rel="noopener" href="https://leetcode.com/problems/search-insert-position/description/">lc 35 Insert target</a></strong><br>search ends at l = r+1, so finally return l if not found (or r+1).</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">searchInsert</span>(<span class="params">nums,target</span>):</span></span><br><span class="line">    l,r = <span class="number">0</span>, <span class="built_in">len</span>(nums)-<span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> l&lt;=r:</span><br><span class="line">        mid = (l+r)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> nums[mid]&lt; target:</span><br><span class="line">            l = mid+<span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> nums[mid] &gt; target:</span><br><span class="line">            r = mid-<span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">    <span class="keyword">return</span> l <span class="comment">#*</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary:"></a>Summary:</h2><ol>
+<li>Both arrays are in an ascending order (no duplicates).</li>
+<li>There are usually two representations for intervals: <code>[left, right]</code> and <code>[left, right)</code>. I prefer the former, so all the binary search code in blogs is based on the <code>[left, right]</code> format.</li>
+</ol>
+<p>Next blog: How to find left and right borders of target in a non-inscreading array. How to search target in unsual array.</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-01-25T12:52:51-07:00"
-              content="2022-01-25">
-          01-25
-        </time>
+    
+    
+    
+    
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:24px;">-------------End of blog<i class="fa fa-paw"></i>Thanks for your reading-------------</div>
+    
+</div>
       </div>
+    
+        
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/01/26/Intelligent-Web-Introduction/" itemprop="url">
-            <span itemprop="name">Intelligent Web - Introduction</span>
-          </a>
-      </div>
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>LIZI FU
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://burjlizix.com/2023/10/12/Binary-Search-I/" title="Binary Search I">https://burjlizix.com/2023/10/12/Binary-Search-I/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
 
-    </header>
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/05/24/Algorithm-day1/" rel="prev" title="Algorithm day1">
+      <i class="fa fa-chevron-left"></i> Algorithm day1
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -295,6 +381,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Scenario"><span class="nav-number">1.</span> <span class="nav-text">Basic Scenario</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Classic-examples"><span class="nav-number">2.</span> <span class="nav-text">Classic examples</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">3.</span> <span class="nav-text">Summary:</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

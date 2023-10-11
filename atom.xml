@@ -6,7 +6,7 @@
   <link href="https://burjlizix.com/atom.xml" rel="self"/>
   
   <link href="https://burjlizix.com/"/>
-  <updated>2023-05-24T01:23:47.035Z</updated>
+  <updated>2023-10-11T10:52:37.048Z</updated>
   <id>https://burjlizix.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Binary Search I</title>
+    <link href="https://burjlizix.com/2023/10/12/Binary-Search-I/"/>
+    <id>https://burjlizix.com/2023/10/12/Binary-Search-I/</id>
+    <published>2023-10-12T00:01:42.000Z</published>
+    <updated>2023-10-11T10:52:37.048Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Basic-Scenario"><a href="#Basic-Scenario" class="headerlink" title="Basic Scenario"></a>Basic Scenario</h2><p>Find the index of a <strong>target matching</strong> element in a <strong>sorted</strong> (either ascending or non-increasing) array.</p><h2 id="Classic-examples"><a href="#Classic-examples" class="headerlink" title="Classic examples"></a>Classic examples</h2><p> <strong><a href="https://leetcode.com/problems/binary-search/description/">lc 704 Search target</a></strong> </p><p>Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.</p><p>You must write an algorithm with O(log n) runtime complexity.</p><p>Example 1:<br>Input: nums = [-1,0,3,5,9,12], target = 9<br>Output: 4<br>Explanation: 9 exists in nums and its index is 4</p><p>Example 2:<br>Input: nums = [-1,0,3,5,9,12], target = 2<br>Output: -1<br>Explanation: 2 does not exist in nums so return -1</p><p>Constraints:<br>1 &lt;= nums.length &lt;= 104<br>-104 &lt; nums[i], target &lt; 104<br>All the integers in nums are unique.<br>nums is sorted in ascending order.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">binarySearch</span>(<span class="params">nums,target</span>):</span></span><br><span class="line">    l,r = <span class="number">0</span>, <span class="built_in">len</span>(nums)-<span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> l &lt;= r: <span class="comment">#*</span></span><br><span class="line">        mid = (l+r)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> target &lt; nums[mid]:</span><br><span class="line">            r = mid - <span class="number">1</span> <span class="comment">#*</span></span><br><span class="line">        <span class="keyword">elif</span> target &gt; nums[mid]:</span><br><span class="line">            l = mid + <span class="number">1</span> <span class="comment">#*</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span></span><br></pre></td></tr></table></figure><br><p> <strong><a href="https://leetcode.com/problems/search-insert-position/description/">lc 35 Insert target</a></strong><br>search ends at l = r+1, so finally return l if not found (or r+1).</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">searchInsert</span>(<span class="params">nums,target</span>):</span></span><br><span class="line">    l,r = <span class="number">0</span>, <span class="built_in">len</span>(nums)-<span class="number">1</span></span><br><span class="line">    <span class="keyword">while</span> l&lt;=r:</span><br><span class="line">        mid = (l+r)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> nums[mid]&lt; target:</span><br><span class="line">            l = mid+<span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> nums[mid] &gt; target:</span><br><span class="line">            r = mid-<span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> mid</span><br><span class="line">    <span class="keyword">return</span> l <span class="comment">#*</span></span><br></pre></td></tr></table></figure><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary:"></a>Summary:</h2><ol><li>Both arrays are in an ascending order (no duplicates).</li><li>There are usually two representations for intervals: <code>[left, right]</code> and <code>[left, right)</code>. I prefer the former, so all the binary search code in blogs is based on the <code>[left, right]</code> format.</li></ol><p>Next blog: How to find left and right borders of target in a non-inscreading array. How to search target in unsual array.</p>]]></content>
+    
+    
+    <summary type="html">Basic understanding of binary search. lc 704, lc 35.</summary>
+    
+    
+    
+    <category term="algorithm" scheme="https://burjlizix.com/categories/algorithm/"/>
+    
+    
+    <category term="algorithm" scheme="https://burjlizix.com/tags/algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>Algorithm day1</title>
