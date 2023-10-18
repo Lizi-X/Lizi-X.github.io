@@ -23,24 +23,23 @@
     var CONFIG = {"hostname":"burjlizix.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false,"sidebar_rss":{"text":"RSS","icon":"fa fa-rss","color":"burywood","link":"atom.xml"}},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.jason"};
   </script>
 
-  <meta name="description" content="In this category, we will focus on Course of ECE 627 by Dr. Marek Reformat. Intelligent web, a new field to learn. Here is introduction of intelligent web in this first post.">
+  <meta name="description" content="lc155 Min Stack, lc225 Implement Stack using Queues, lc146 LRU Cache">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Intelligent Web - Introduction">
-<meta property="og:url" content="https://burjlizix.com/2022/01/26/Intelligent-Web-Introduction/index.html">
+<meta property="og:title" content="Implement MinStack, MyStack using queues, LRU Cache">
+<meta property="og:url" content="https://burjlizix.com/2023/10/20/Implement-MinStack-MyStack-using-queues-LRU-Cache/index.html">
 <meta property="og:site_name" content="Burj Lizi X">
-<meta property="og:description" content="In this category, we will focus on Course of ECE 627 by Dr. Marek Reformat. Intelligent web, a new field to learn. Here is introduction of intelligent web in this first post.">
+<meta property="og:description" content="lc155 Min Stack, lc225 Implement Stack using Queues, lc146 LRU Cache">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://live.staticflickr.com/65535/51843999139_b76cc440e5_k.jpg">
-<meta property="article:published_time" content="2022-01-25T19:52:51.000Z">
-<meta property="article:modified_time" content="2022-01-30T01:55:33.904Z">
+<meta property="article:published_time" content="2023-10-20T03:41:31.000Z">
+<meta property="article:modified_time" content="2023-10-18T19:15:27.627Z">
 <meta property="article:author" content="LIZI FU">
-<meta property="article:tag" content="intelligent web">
-<meta property="article:tag" content="ontonogy">
-<meta property="article:tag" content="semantic web">
+<meta property="article:tag" content="stack">
+<meta property="article:tag" content="queues">
+<meta property="article:tag" content="linked list">
+<meta property="article:tag" content="class">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://live.staticflickr.com/65535/51843999139_b76cc440e5_k.jpg">
 
-<link rel="canonical" href="https://burjlizix.com/2022/01/26/Intelligent-Web-Introduction/">
+<link rel="canonical" href="https://burjlizix.com/2023/10/20/Implement-MinStack-MyStack-using-queues-LRU-Cache/">
 
 
 <script id="page-configurations">
@@ -53,7 +52,7 @@
   };
 </script>
 
-  <title>Intelligent Web - Introduction | Burj Lizi X</title>
+  <title>Implement MinStack, MyStack using queues, LRU Cache | Burj Lizi X</title>
   
 
 
@@ -212,7 +211,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2022/01/26/Intelligent-Web-Introduction/">
+    <link itemprop="mainEntityOfPage" href="https://burjlizix.com/2023/10/20/Implement-MinStack-MyStack-using-queues-LRU-Cache/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -225,7 +224,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Intelligent Web - Introduction
+          Implement MinStack, MyStack using queues, LRU Cache
         </h1>
 
         <div class="post-meta">
@@ -235,14 +234,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-01-25 12:52:51" itemprop="dateCreated datePublished" datetime="2022-01-25T12:52:51-07:00">2022-01-25</time>
+              <time title="Created: 2023-10-19 21:41:31" itemprop="dateCreated datePublished" datetime="2023-10-19T21:41:31-06:00">2023-10-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-29 18:55:33" itemprop="dateModified" datetime="2022-01-29T18:55:33-07:00">2022-01-29</time>
+                <time title="Modified: 2023-10-18 13:15:27" itemprop="dateModified" datetime="2023-10-18T13:15:27-06:00">2023-10-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -250,12 +249,12 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Intelligent-Web-ECE-627/" itemprop="url" rel="index"><span itemprop="name">Intelligent Web-ECE 627</span></a>
+                  <a href="/categories/Data-Structures-and-Algorithms/" itemprop="url" rel="index"><span itemprop="name">Data Structures and Algorithms</span></a>
                 </span>
             </span>
 
           
-            <div class="post-description">In this category, we will focus on Course of ECE 627 by Dr. Marek Reformat. Intelligent web, a new field to learn. Here is introduction of intelligent web in this first post.</div>
+            <div class="post-description">lc155 Min Stack, lc225 Implement Stack using Queues, lc146 LRU Cache</div>
 
         </div>
       </header>
@@ -266,7 +265,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://live.staticflickr.com/65535/51843999139_b76cc440e5_k.jpg" alt="lec0 &amp; lec1"></p>
+        <h2 id="Min-Stack"><a href="#Min-Stack" class="headerlink" title="Min Stack"></a>Min Stack</h2><p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/min-stack/description/">lc155. Min Stack</a> ($\leftarrow$ click)<br><strong>Description</strong><br>Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.<br>Implement the MinStack class:<br>MinStack() initializes the stack object.<br>void push(int val) pushes the element val onto the stack.<br>void pop() removes the element on the top of the stack.<br>int top() gets the top element of the stack.<br>int getMin() retrieves the minimum element in the stack.<br>You must implement a solution with O(1) time complexity for each function.</p>
+<p><strong>Example</strong><br>Example 1:</p>
+<p>Input<br>[“MinStack”,”push”,”push”,”push”,”getMin”,”pop”,”top”,”getMin”]<br>[ [],[-2],[0],[-3],[],[],[],[] ]</p>
+<p>Output<br>[null,null,null,null,-3,null,0,-2]</p>
+<p>Explanation<br>MinStack minStack = new MinStack();<br>minStack.push(-2);<br>minStack.push(0);<br>minStack.push(-3);<br>minStack.getMin(); // return -3<br>minStack.pop();<br>minStack.top();    // return 0<br>minStack.getMin(); // return -2</p>
+<p><strong>Constraints</strong><br>-231 &lt;= val &lt;= 231 - 1<br>Methods pop, top and getMin operations will always be called on non-empty stacks.<br>At most 3 * 104 calls will be made to push, pop, top, and getMin.</p>
+<p><strong>Solution</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MinStack</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.minStack = []</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">push</span>(<span class="params">self, val</span>)：</span></span><br><span class="line"><span class="function">        <span class="title">if</span> <span class="title">not</span> <span class="title">self</span>.<span class="title">minStack</span>:</span> <span class="comment"># push first element </span></span><br><span class="line">            self.minStack.append((val,val))</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.minStack.append((val,<span class="built_in">min</span>(self.minStack[-<span class="number">1</span>][-<span class="number">1</span>],val))) <span class="comment"># push (val, min val)</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">pop</span>(<span class="params">self</span>):</span></span><br><span class="line">        self.minStack.pop()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">top</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.minStack[-<span class="number">1</span>][<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getMin</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.minStack[-<span class="number">1</span>][-<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="LRU-Cache"><a href="#LRU-Cache" class="headerlink" title="LRU Cache"></a>LRU Cache</h2><p><a target="_blank" rel="noopener" href="https://leetcode.com/problems/lru-cache/description/">lc146 LRU Cache</a> ($\leftarrow$ click)<br><strong>Description</strong><br>Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.<br>Implement the LRUCache class:<br>LRUCache(int capacity) Initialize the LRU cache with positive size capacity.<br>int get(int key) Return the value of the key if the key exists, otherwise return -1.<br>void put(int key, int value) Update the value of the key if the key exists. Otherwise, add the key-value pair to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.<br>The functions get and put must each run in O(1) average time complexity.</p>
+<p><strong>Example</strong><br>Example 1:</p>
+<p>Input<br>[“LRUCache”, “put”, “put”, “get”, “put”, “get”, “put”, “get”, “get”, “get”]<br>[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]<br>Output<br>[null, null, null, 1, null, -1, null, -1, 3, 4]</p>
+<p>Explanation<br>LRUCache lRUCache = new LRUCache(2);<br>lRUCache.put(1, 1); // cache is {1=1}<br>lRUCache.put(2, 2); // cache is {1=1, 2=2}<br>lRUCache.get(1);    // return 1<br>lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}<br>lRUCache.get(2);    // returns -1 (not found)<br>lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}<br>lRUCache.get(1);    // return -1 (not found)<br>lRUCache.get(3);    // return 3<br>lRUCache.get(4);    // return 4</p>
+<p><strong>Constraints</strong></p>
+<p>1 &lt;= capacity &lt;= 3000<br>0 &lt;= key &lt;= 104<br>0 &lt;= value &lt;= 105<br>At most 2 * 105 calls will be made to get and put.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LRU</span> <span class="title">Cache</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, capacity</span>):</span></span><br><span class="line">        self.cap = capacity</span><br><span class="line">        self.cache = collections.OrderedDict()</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get</span>(<span class="params">self, key</span>):</span></span><br><span class="line">        <span class="keyword">if</span> key <span class="keyword">not</span> <span class="keyword">in</span> self.cache:</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span></span><br><span class="line">        self.cache.move_to_end(key)</span><br><span class="line">        <span class="keyword">return</span> self.cache[key]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">put</span>(<span class="params">self, key, value</span>):</span></span><br><span class="line">        <span class="keyword">if</span> key <span class="keyword">in</span> self.cache:</span><br><span class="line">            self.cache[key] = val</span><br><span class="line">            self.cache.move_to_end(key)</span><br><span class="line">            <span class="keyword">return</span> </span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(self.key) &gt;= self.cap:</span><br><span class="line">            self.cache.popitem(last=<span class="literal">False</span>)</span><br><span class="line">        self.cache[key] = val</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -292,7 +306,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://burjlizix.com/2022/01/26/Intelligent-Web-Introduction/" title="Intelligent Web - Introduction">https://burjlizix.com/2022/01/26/Intelligent-Web-Introduction/</a>
+    <a href="https://burjlizix.com/2023/10/20/Implement-MinStack-MyStack-using-queues-LRU-Cache/" title="Implement MinStack, MyStack using queues, LRU Cache">https://burjlizix.com/2023/10/20/Implement-MinStack-MyStack-using-queues-LRU-Cache/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -303,9 +317,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/intelligent-web/" rel="tag"># intelligent web</a>
-              <a href="/tags/ontonogy/" rel="tag"># ontonogy</a>
-              <a href="/tags/semantic-web/" rel="tag"># semantic web</a>
+              <a href="/tags/stack/" rel="tag"># stack</a>
+              <a href="/tags/queues/" rel="tag"># queues</a>
+              <a href="/tags/linked-list/" rel="tag"># linked list</a>
+              <a href="/tags/class/" rel="tag"># class</a>
           </div>
 
         
@@ -314,13 +329,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/01/18/Begin-with-Markdown-3-Diagrams/" rel="prev" title="Begin with Markdown 3 Diagrams">
-      <i class="fa fa-chevron-left"></i> Begin with Markdown 3 Diagrams
+    <a href="/2023/10/19/Design-Stack-and-Queue/" rel="prev" title="Design Stack and Queue">
+      <i class="fa fa-chevron-left"></i> Design Stack and Queue
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/01/30/Optimization-Settings-for-Hexo/" rel="next" title="Optimization Settings for Hexo">
-      Optimization Settings for Hexo <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -379,6 +391,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Min-Stack"><span class="nav-number">1.</span> <span class="nav-text">Min Stack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LRU-Cache"><span class="nav-number">2.</span> <span class="nav-text">LRU Cache</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
